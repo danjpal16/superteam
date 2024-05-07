@@ -77,7 +77,7 @@ function generateTeamCards(){
 
 
         card.innerHTML= `
-            <div class="card">
+            <div class="card ">
                 <div class="card-header">
                 ${member.name}
                 </div>
@@ -85,7 +85,7 @@ function generateTeamCards(){
                     <p><strong>Age:</strong> ${member.age}</p>
                 </div>
             </div>
-        
+    
         `
     teamCardsContainer.appendChild(card)
     });
