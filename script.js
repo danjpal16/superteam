@@ -37,13 +37,13 @@ const teamMembers = [
     {
         name: 'Kyle Broflovski',
         age: '10',
-        height: '4ft 4in',
-        weight: '90lbs',
-        purpose: 'Comic Relief',
-        strengths: 'Master Manipulator',
-        weaknesses: 'Fat',
-        skills: ['Big Eater', 'Funny', 'Smart'],
-        biography: 'Eric Cartman is a child',
+        height: '4ft 9in',
+        weight: 'Average',
+        purpose: 'Voice of reason and morality',
+        strengths: 'Intelligence, Strong sense of justice, Loyalty to friends',
+        weaknesses: 'Stubbornness, Tendency to overreact emotionally',
+        skills: ['Critical thinking', 'Problem-solving', 'Occasional proficiency in public speaking'],
+        biography: 'Kyle Broflovski, a principled and intellectually curious fourth grader from South Park, Colorado, navigates the absurdities of life in the small mountain town alongside his friends, often confronting prejudice and injustice with unwavering determination',
     },
 ]
 
