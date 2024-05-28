@@ -11,6 +11,7 @@ const teamMembers = [
         weaknesses: 'Fat',
         skills: ['Big Eater', 'Funny', 'Smart'],
         biography: 'Eric Cartman is a child',
+        img: "ec1.png",
     },
     {
         name: 'Stan Marsh',
@@ -22,6 +23,7 @@ const teamMembers = [
         weaknesses: 'Fat',
         skills: ['Big Eater', 'Funny', 'Smart'],
         biography: 'Eric Cartman is a child',
+        img: "sm1.png",
     },
     {
         name: 'Kenny McCormick',
@@ -33,6 +35,7 @@ const teamMembers = [
         weaknesses: 'Fat',
         skills: ['Big Eater', 'Funny', 'Smart'],
         biography: 'Eric Cartman is a child',
+        img: "km1.png",
     },
     {
         name: 'Kyle Broflovski',
@@ -44,6 +47,7 @@ const teamMembers = [
         weaknesses: 'Fat',
         skills: ['Big Eater', 'Funny', 'Smart'],
         biography: 'Eric Cartman is a child',
+        img: "kb1.png",
     },
 ]
 
@@ -82,6 +86,7 @@ function generateTeamCards(){
                 ${member.name}
                 </div>
                 <div class="card-body">
+                <img src="${member.img}">
                     <p><strong>Age:</strong> ${member.age}</p>
                 </div>
             </div>
