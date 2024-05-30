@@ -102,7 +102,7 @@ const teamMembers = [
         age: 'Mid-to-late 30s',
         height: '6ft 1in',
         weight: '220lbs',
-        purpose: 'Enforces politically correct culture in South Park Elementary, Maintains an environment free of discrimination and insensitivity',
+        purpose: 'Enforces politically correct culture, Maintains an environment free of discrimination and insensitivity',
         strengths: 'Passionate, Physical Strength, Leadership',
         weaknesses: 'Overzealousness, Aggression, Hypocrisy',
         skills: ['Enforcement of Policies', 'Physical Fitness', 'Public Speaking'],
@@ -114,11 +114,11 @@ const teamMembers = [
         age: '45',
         height: '6ft',
         weight: '220lbs',
-        purpose: 'Satirical representation of the average American middle-aged man, Comic Relief, Reflects the flaws and follies of everyday life',
+        purpose: 'Satirical representation of the average American middle-aged man, Comic Relief, Reflects the flaws of everyday life',
         strengths: 'Versatility, Enthusiasm, Resourcefulness',
         weaknesses: 'Impulsiveness, Obsession, Ignorance',
         skills: ['Geology', 'Entrepreneurship', 'Musical Talent'],
-        biography: 'Randy Marsh, the eccentric father in South Park, Colorado, embarks on impulsive and often absurd adventures, from posing as a pop star to running a marijuana business, reflecting the shows satire on the trials of middle-aged men while remaining a central figure in his family and community.',
+        biography: 'Randy Marsh, the eccentric father embarks on impulsive and often absurd adventures, from posing as a pop star to running a marijuana business, reflecting the shows satire on the trials of middle-aged men while remaining a central figure in his family and community.',
         img: "rm1.png",
     },
 ]
@@ -134,10 +134,38 @@ function generateTeamCards(){
 
         let backgroundColor
 
-        switch(member.age.toLowerCase()) {
-            case '10':
-                backgroundColor = ""
-                break
+        switch(member.name.toLowerCase()) {
+            case 'eric cartman':
+                backgroundColor = "red"
+                break;
+            case 'stan marsh':
+                backgroundColor = "navy"
+                break;
+            case 'kenny mccormick':
+                backgroundColor = "orange"
+                break;
+            case 'kyle broflovski':
+                backgroundColor = "greenyellow"
+                break;
+            case 'butters stotch':
+                backgroundColor = "turquoise"
+                break;
+            case 'mr. mackey':
+                backgroundColor = "gray"
+                break;
+            case 'mr. garrison':
+                backgroundColor = "green"
+                break;
+            case 'chef':
+                backgroundColor = "brown"
+                break;
+            case 'pc principal':
+                backgroundColor = "darkblue"
+                break;
+            case 'randy marsh':
+                backgroundColor = "darkcyan"
+                break;
+            
         }
 
 
@@ -153,12 +181,12 @@ function generateTeamCards(){
 
 
         card.innerHTML= `
-            <div class="card ">
+            <div class="card p-2">
                 <div class="card-header">
                 ${member.name}
                 </div>
                 <div class="card-body">
-                <img src="${member.img}">
+                <img class="img-fluid" src="${member.img}">
                     <strong>Age:</strong> ${member.age}
                     <ul>
                         <li><strong>Height:</strong> ${member.height}</li>
